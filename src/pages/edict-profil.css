@@ -1,0 +1,257 @@
+/* MyProfilContent component */
+
+.my-profil {
+}
+.my-profil__header {
+  height: 100%;
+}
+.my-profil__header-img {
+  height: 200px;
+  width: 100%;
+}
+
+.my-profil__header-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.my-profil__header-profil {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: -65px;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.my-profil__header-profil__img {
+  height: 110px;
+  width: 110px;
+  border-radius: 100%;
+  border: 3px solid #ffff;
+}
+
+.my-profil__header-profil__img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.my-profil__header-profil__icon {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.my-profil__header-profil__icon .secondary__btn {
+  position: sticky;
+  /* bottom: 300px; */
+  top: 0px;
+  margin-left: 10px;
+}
+
+.my-profil__textbox {
+  padding: 5px 15px;
+}
+.my-profil__textbox-name {
+  padding-bottom: 12px;
+}
+
+.my-profil__textbox-name span {
+  font-size: 0.8rem;
+}
+
+.my-profil__textbox-intro {
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+}
+
+.my-profil__textbox-other {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.my-profil__textbox-other__city {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.my-profil__textbox-other__city svg {
+  margin-right: 10px;
+}
+
+.my-profil__textbox-register svg {
+  margin-right: 10px;
+}
+
+.my-profil__textbox-following {
+  display: flex;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+}
+
+.my-profil__textbox-following p {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.my-profil__textbox-following p span {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.my-profil__textbox-message {
+  font-size: 0.85rem;
+}
+
+/* edict-popup component */
+
+.edict-popup {
+  position: fixed;
+  background-color: #1e1c1c28;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease, visibility 0s 0.8s;
+}
+
+.edict-popup.isOpened {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.6s ease;
+}
+
+.edict-popup__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 65%;
+  width: 30%;
+  background-color: #ffff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  pointer-events: auto;
+}
+
+.edict-popup__container-header {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #ffff;
+  z-index: 1000;
+}
+
+.edict-popup__container-header__icon {
+  display: flex;
+  align-items: center;
+}
+.edict-popup__container-header__icon span {
+  margin-right: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edict-popup__container-form__els {
+  margin-bottom: 10px;
+}
+
+.edict-popup__container-form__el-banner {
+  height: 170px;
+  width: 100%;
+  position: relative;
+}
+
+.edict-popup__container-form__el-banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.edict-popup__container-form__el-banner label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  cursor: pointer;
+  background-color: rgba(1, 1, 1, 0.576);
+  border-radius: 50%;
+}
+
+.edict-popup__container-form__el-banner label svg {
+  color: white;
+  fill: #ffff;
+}
+.edict-popup__container-form__el-prof {
+  height: 120px;
+  width: 120px;
+  margin: 0 10px;
+  margin-top: -60px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.edict-popup__container-form__el-prof img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffff;
+  box-sizing: border-box;
+}
+
+.edict-popup__container-form__el-prof label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  cursor: pointer;
+  background-color: rgba(1, 1, 1, 0.576);
+  border-radius: 50%;
+}
+
+.edict-popup__container-form__el-prof label svg {
+  color: white;
+  fill: #ffff;
+}
+
+.edict-popup__container-form__el {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #b2b2b278;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.edict-popup__container-form__el input {
+  border: none;
+  outline: none;
+}
+
+.edict-popup__container-form__el textarea {
+  border: none;
+  outline: none;
+  resize: none;
+}
